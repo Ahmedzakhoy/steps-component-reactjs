@@ -32,7 +32,7 @@ export default function App() {
       {isOpen && (
         <>
           {step === 1 && (
-            <StepMessage step={1}>
+            <StepMessage className="article" step={1}>
               {learnData[0].map((p) => (
                 <p>{p}</p>
               ))}
@@ -41,7 +41,7 @@ export default function App() {
           )}
 
           {step === 2 && (
-            <StepMessage step={2}>
+            <StepMessage className="article" step={2}>
               {learnData[1].map((p) => (
                 <p>{p}</p>
               ))}
@@ -49,7 +49,7 @@ export default function App() {
             </StepMessage>
           )}
           {step === 3 && (
-            <StepMessage step={3}>
+            <StepMessage className="article" step={3}>
               {learnData[2].map((p) => (
                 <p>{p}</p>
               ))}

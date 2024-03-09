@@ -23,7 +23,7 @@ export function Steps({ isOpen, step, onPrevious, onNext, onOpen }) {
   return (
     <>
       <button className="close" onClick={onOpen}>
-        {isOpen ? "Close" : "Open"}
+        {isOpen ? "⏫⏫" : "⏬⏬"}
       </button>
       {isOpen && (
         <div className="steps">
@@ -62,9 +62,9 @@ export function Steps({ isOpen, step, onPrevious, onNext, onOpen }) {
   );
 }
 
-export function StepMessage({ step, children }) {
+export function StepMessage({ step, children, className }) {
   return (
-    <div className="message">
+    <div className={`message ${className}`}>
       <h3>Step {step}</h3>
       {children}
     </div>

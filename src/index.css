@@ -9,9 +9,10 @@ body {
 
 .steps {
   width: 600px;
+  max-width: 90%;
   background-color: #f7f7f7;
   border-radius: 7px;
-  padding: 25px 100px;
+  padding: 10px 20px;
   margin: 100px auto;
 }
 
@@ -79,6 +80,17 @@ body {
   line-height: 1;
 }
 
+@media only screen and (max-width: 500px) {
+  .buttons button {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  
+  .buttons button span {
+    font-size: 12px;
+  }
+  
+}
 h3 {
   margin: 0;
   text-transform: uppercase;
@@ -97,4 +109,25 @@ h3 {
 
 .close:hover {
   color: #7950f2;
+}
+
+.article {
+  width: 700px;
+  max-width: 90%;
+  margin: 0 auto;
+  border: 2px dashed rgb(121, 80, 242);
+  border-radius: 5px;
+  padding: 0;
+  
+}
+.article h3 {
+  font-size: 40px;
+  color: rgb(121, 80, 242);
+  margin-bottom: 50px;
+  
+}
+.article p {
+  font-size: 15px;
+  padding: 0;
+  
 }
